@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "1eb13509-871e-456e-bb90-38ac6a619d11",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48003781",
+		"_collection_link": "https://abdelrahmanallam134-2482844.postman.co/workspace/Abdelrahman-Allam's-Workspace~604daa80-3a62-4559-8261-606346a470d1/collection/48003781-1eb13509-871e-456e-bb90-38ac6a619d11?action=share&source=collection_link&creator=48003781"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjcwNTdmZmZlOTA5NDI0MGZkM2U3OSIsImlhdCI6MTc1NjgyNTQ4MCwiZXhwIjoxNzU3NDMwMjgwfQ.wIhEl59P_aZxU6iabMBQfQsMxmXRZ9tJDVUUYubQkCI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"second post\",\r\n\"content\": \"This is a second post content\",\r\n\"userId\": \"64f123abcd4567890ef12345\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjcwNTdmZmZlOTA5NDI0MGZkM2U3OSIsImlhdCI6MTc1NjgyNTQ4MCwiZXhwIjoxNzU3NDMwMjgwfQ.wIhEl59P_aZxU6iabMBQfQsMxmXRZ9tJDVUUYubQkCI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjcwNTdmZmZlOTA5NDI0MGZkM2U3OSIsImlhdCI6MTc1NjgyNTQ4MCwiZXhwIjoxNzU3NDMwMjgwfQ.wIhEl59P_aZxU6iabMBQfQsMxmXRZ9tJDVUUYubQkCI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new of second post\",\r\n\"content\": \"This is a second post content\",\r\n\"userId\": \"64f123abcd4567890ef12345\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts/68b70a9fffe9094240fd3ea5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"68b70a9fffe9094240fd3ea5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjcwNTdmZmZlOTA5NDI0MGZkM2U3OSIsImlhdCI6MTc1NjgyNTQ4MCwiZXhwIjoxNzU3NDMwMjgwfQ.wIhEl59P_aZxU6iabMBQfQsMxmXRZ9tJDVUUYubQkCI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts/68b70a9fffe9094240fd3ea5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"68b70a9fffe9094240fd3ea5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

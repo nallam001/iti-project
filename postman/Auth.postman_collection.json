@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "14dba62e-bddd-44fc-95bb-dc26ce0a9755",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48003781",
+		"_collection_link": "https://abdelrahmanallam134-2482844.postman.co/workspace/Abdelrahman-Allam's-Workspace~604daa80-3a62-4559-8261-606346a470d1/collection/48003781-14dba62e-bddd-44fc-95bb-dc26ce0a9755?action=share&source=collection_link&creator=48003781"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ahmed\",\r\n  \"email\": \"ahmed@example.com\",\r\n  \"password\": \"123456\",\r\n  \"bio\": \"Hello!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ahmed@example.com\",\r\n  \"password\": \"123456\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
